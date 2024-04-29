@@ -32,14 +32,14 @@ t_NOUN = r'(' + '|'.join(nouns) + r')'\
 t_VERB = r'(' + '|'.join(verbs) + r')'\
 (#VERBEX is same as verbca as mention in the pdf)\
 t_VERBEX = r'is|am|was|were|are'\
-t_VERBCB = r'(sleeping|talking|crying|laughing|feeding|eating|bathing|grumbling|loitering|watching)'\
+t_VERBCB = r'(sleeping|talking|crying|laughing|feeding|eating|bathing|grumbling|loitering|watching)'
 
-Brown corpus nltk package is used for for the terminals - noun, articles, verbc\
+Brown corpus nltk package is used for for the terminals - noun, articles, verbc
 
-The grammar rules are specified below ->\
+The grammar rules are specified below ->
 
-	sentence -> noun verb_phrase | noun verbc\
-	noun -> article | NOUN\
-	verbc -> VERBEX VERBCB\
-	article -> ARTICLE | epsilon\
-	verb_phrase -> VERB | VERBEX VERB | NOUN verb_phrase | NOUN verbc  \
+	sentence -> noun verb_phrase | noun verbc
+	noun -> article | NOUN
+	verbc -> VERBEX VERBCB
+	article -> ARTICLE | epsilon
+	verb_phrase -> VERB | VERBEX VERB | NOUN verb_phrase | NOUN verbc  
